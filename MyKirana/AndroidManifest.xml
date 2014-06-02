@@ -8,6 +8,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
     
+      <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="android.permission.USE_CREDENTIALS" />
       <uses-permission android:name="android.permission.INTERNET" />
           <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -27,6 +29,18 @@
         </activity>
          <activity
             android:name="com.bigbizsol.mykirana.LoginActivity"
+            android:label="@string/app_name" >
+            </activity>
+             <activity
+            android:name="com.bigbizsol.mykirana.GmailLoginActivity"
+            android:label="@string/app_name" >
+            </activity>
+            <activity
+            android:name="com.bigbizsol.mykirana.SignupActivity"
+            android:label="@string/app_name" >
+            </activity>
+             <activity
+            android:name="com.bigbizsol.mykirana.HomeScreen"
             android:label="@string/app_name" >
             </activity>
     </application>
