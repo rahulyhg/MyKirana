@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#ff5500</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="lytblue">#DAE4EA</color>
+    <color name="date_color">#999999</color>
+    <color name="black">#000000</color>
+    <color name="brown">#CC6600</color>
+    <color name="red"> #FF0000</color>
+    <color name="gray">#666666</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="blue">#0066cc</color>
+    <color name="gold">#e6b121</color>
+    <color name="blueback">#99FFFF</color>
+    <color name="articlecolor">#3399FF</color>
+    <color name="article_title">#3399FF</color>
+    <color name="leftpanel"> #1C1E26</color>
+    <color name="cachecolor">#8ad0e8</color>
+    <color name="contactslistitembg">#fff2e5</color>
+    <color name="contactslistitembottom">#e8c298</color>
+    <color name="green">#556B2F</color>
+    <color name="yellow">#FBF706</color>
+    <color name="background">#fdd5aa</color>
+    <color name="pink">#ef3c9e</color>
+    <color name="lytgray">#696969</color>
+    <color name="RM_button_text_color">#F03CA0</color>
+    <color name="RM_header_text_color">#BE2276</color>
+    <color name="dark_green">#008000</color>
+    <color name="lead">#696969</color>
+    <color name="litter_gray">#888888</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="app_color">#16a085</color>
+    <color name="header_color">#ECF0F1</color>
+    <color name="slateGray">#2F4F4F</color>
+    <color name="cloudColor">#ECF0F1</color>
+    <color name="md__transparent">#00000000</color>
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="cancel_pressed">#A8B2B8</color>
+
+</resources>

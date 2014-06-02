@@ -4,5 +4,6 @@
     <string name="app_name">MyKirana</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="signup"><u>New User signup here</u></string>
 
 </resources>
