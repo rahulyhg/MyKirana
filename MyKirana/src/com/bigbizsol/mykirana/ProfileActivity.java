@@ -5,42 +5,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.ImageView;
 
-public class HomeScreen extends Activity{
+public class ProfileActivity extends Activity{
 	
-	private Button frequentOrders_Btn;
 	private ImageView profilepic_Img;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.homescreenlayout);
-		frequentOrders_Btn = (Button)findViewById(R.id.frequent_orders_home);
-		
+		setContentView(R.layout.profile_screen);
 		profilepic_Img = (ImageView)findViewById(R.id.profilepic_home);
 		profilepic_Img.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				
-				Intent intent = new Intent(HomeScreen.this,ProfileActivity.class);
+				Intent intent = new Intent(ProfileActivity.this,ProfileActivity.class);
 				startActivity(intent);
 				
 			}
 		});
-		frequentOrders_Btn.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				Intent intent = new Intent(HomeScreen.this,FrequentOrdersActivity.class);
-				startActivity(intent);
-			}
-		});
-		
-		
-		
 	}
 
 }

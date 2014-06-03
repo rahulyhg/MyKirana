@@ -92,8 +92,12 @@ public class LoginActivity extends Activity{
 				if(parsePassword.equals(password))
 				{
 					/////////////////////////
-					Toast.makeText(getApplicationContext(), "Successful Login", Toast.LENGTH_SHORT).show();
-					Log.i("***********************", "*************************");
+					Intent intent = new Intent(LoginActivity.this,HomeScreen.class);
+					startActivity(intent);
+				}
+				else
+				{
+					Toast.makeText(getBaseContext(), "Incorrect password..", Toast.LENGTH_SHORT).show();
 				}
 				
 				
