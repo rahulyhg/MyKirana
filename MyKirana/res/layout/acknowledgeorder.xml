@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Welcome"
+            android:textColor="@color/black"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/usernew" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/addtocart" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="22dip"
+        android:layout_weight="1"
+        android:text="Acknowledge Order"
+        android:textSize="20dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="bottom"
+            android:text="Order Number:"
+            android:textColor="@color/black"
+            android:textSize="22dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="bottom"
+            android:text="bcxcb"
+            android:textColor="@color/black"
+            android:textSize="22dip" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_weight="1"
+        android:background="#E0E0E0"
+        android:text="Aknowledge Order"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_weight="4"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:hint="FAVOURITE"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="HOME"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="FAVOURITES"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:hint="FAVOURITE"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="OFFERS"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+</LinearLayout>
