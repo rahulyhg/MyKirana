@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <EditText
+            android:id="@+id/cartitem_tv_name"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Toordal"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <EditText
+            android:id="@+id/cartitem_tv_quantity"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="100g"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/cartitem_tv_disc"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/cartitem_tv_price"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <EditText
+            android:id="@+id/cartitem_tv_total"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="90"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+
+        <ImageView
+            android:id="@+id/cartitem_im_edit"
+            android:layout_width="0dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:src="@drawable/editbutton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:weightSum="6" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Toordal"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="100g"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="90"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/cartitem_im_delete"
+            android:layout_width="0dip"
+            android:layout_height="30dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:src="@drawable/recycle" />
+    </LinearLayout>
+
+</LinearLayout>
