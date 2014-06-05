@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="6.4" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Welcome"
+            android:textColor="@color/black"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profilepic_home"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/usernew" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/addtocart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_margin="20dip"
+        android:layout_weight="1.6"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Search By"
+            android:textColor="@color/black"
+            android:textSize="18dip" />
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/search_input1"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="0dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/icon_search" />
+
+            <EditText
+                android:id="@+id/edSearch"
+                android:layout_width="0dip"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+                android:background="@null"
+                android:hint="Search"
+                android:imeOptions="actionSearch"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="0dip"
+                android:layout_height="30dip"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/cancel_search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:text="OR"
+        android:textColor="@color/black"
+        android:textSize="18dip" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_margin="10dip"
+        android:layout_weight="1"
+        android:prompt="@string/prompt" />
+
+    <Button
+        android:id="@+id/go_new_order"
+        android:layout_width="110dip"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_margin="20dip"
+        android:layout_weight="0.7"
+        android:background="@drawable/rounded_white_button"
+        android:gravity="center"
+        android:text="Go" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.8"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:hint="FAVOURITE"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="HOME"
+            android:layout_margin="5dip"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+             android:layout_margin="5dip"
+            android:text="FAVOURITES"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:hint="FAVOURITE"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+             android:layout_margin="5dip"
+            android:text="OFFERS"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.8"
+        android:gravity="bottom"
+        android:layout_marginBottom="5dip"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:weightSum="3" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:hint="FAVOURITE"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="HOME"
+            android:textColor="@color/black"
+            android:textSize="14dip"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="OFFERS"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:hint="FAVOURITE"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="OFFERS"
+            android:textColor="@color/black"
+            android:textSize="14dip"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

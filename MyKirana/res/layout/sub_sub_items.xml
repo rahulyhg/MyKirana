@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="11.5" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_margin="5dip"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/header_sub_subitems"
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SubItems"
+            android:textColor="@color/black"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profilepic_sub_subitems"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/usernew" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/addtocart" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_sub_subitems"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_margin="5dip"
+        android:layout_weight="7"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:text="HOME"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:text="FAVOURITES"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:text="FREQUENT\nORDERS"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:hint="FAVOURITE"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="HOME"
+            android:textColor="@color/black"
+            android:textSize="14dip"
+            android:visibility="invisible" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="OFFERS"
+            android:textColor="@color/black"
+            android:textSize="14dip" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dip"
+            android:layout_weight="1"
+            android:background="@drawable/homescreentextborderrounded"
+            android:hint="FAVOURITE"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="OFFERS"
+            android:textColor="@color/black"
+            android:textSize="14dip"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>
