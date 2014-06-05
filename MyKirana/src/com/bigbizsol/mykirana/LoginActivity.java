@@ -5,7 +5,6 @@ import java.util.List;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -15,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.ParseException;
-import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
@@ -26,6 +24,7 @@ public class LoginActivity extends Activity{
 	private TextView signupLink;
 	private Button login_Btn;
 	private EditText password_Edt;
+	private ImageView login_imageview_facebookicon;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +36,15 @@ public class LoginActivity extends Activity{
 		signupLink = (TextView)findViewById(R.id.signup_link);
 		password_Edt = (EditText)findViewById(R.id.password_login);
 		login_Btn = (Button)findViewById(R.id.login);
+		login_imageview_facebookicon=(ImageView)findViewById(R.id.login_imageview_facebookicon);
+		login_imageview_facebookicon.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ShareOnFacebook sof = new ShareOnFacebook(LoginActivity.this,LoginActivity.this);
+				sof.postOnFacebook("facebook test");
+			}
+		});
 		gmailImage.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -57,7 +65,7 @@ public class LoginActivity extends Activity{
 			}
 		});
 		login_Btn.setOnClickListener(new OnClickListener() {
-			
+
 			private String parsePassword;
 
 			@Override
@@ -66,13 +74,13 @@ public class LoginActivity extends Activity{
 				String username,password;
 				username = username_Edt.getText().toString();
 				password = password_Edt.getText().toString();
-				
+
 				List<ParseObject> ob = null;
-				
+
 				ParseQuery<ParseObject> query = new ParseQuery<ParseObject>(
 						"UserDetails");
 				query.whereEqualTo("userName", username);
-				
+
 				// Locate the column named "ranknum" in Parse.com and order list
 				// by ascending
 				try {
@@ -83,11 +91,11 @@ public class LoginActivity extends Activity{
 				}
 				for (ParseObject country : ob) {
 					// Locate images in flag column
-					
+
 					parsePassword = (String)country.get("password");
-					
-					
-					
+
+
+
 				}
 				if(parsePassword.equals(password))
 				{
@@ -99,9 +107,9 @@ public class LoginActivity extends Activity{
 				{
 					Toast.makeText(getBaseContext(), "Incorrect password..", Toast.LENGTH_SHORT).show();
 				}
-				
-				
-				
+
+
+
 			}
 		});
 
