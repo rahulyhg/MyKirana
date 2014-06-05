@@ -2,7 +2,66 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Welcome"
+            android:textColor="@color/black"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profilepic_home"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/usernew" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/addtocart" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:cacheColorHint="@null"
+        android:layout_marginBottom="10dip"
+        android:layout_weight="8" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/homescreentextborderrounded"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="Home"
+        android:textColor="@color/black" />
 
 </LinearLayout>
